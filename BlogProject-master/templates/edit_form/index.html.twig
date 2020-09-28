@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Создать пост{% endblock %}
+
+{% block body %}
+    <h1>Создать пост</h1>
+
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    <button type="submit">Добавить</button>
+
+    {{ form_end(form) }}
+
+    <div><p><a href="http://127.0.0.1:8000/">Главная</a></p></div>
+{% endblock %}
